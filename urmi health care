@@ -1,0 +1,41 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   float age, height, weight, BMI;
+   char medicine[100];
+  
+    printf("Enter Your age\n");
+    scanf("%f" ,& age);
+    printf("Enter Your Height in meters\n");
+    scanf("%f" ,& height);
+    printf("Enter Your weight\n");
+    scanf("%f", & weight);
+    BMI = weight / (height * height); 
+    if(BMI<18)
+    {
+        printf("Your BMI is %f\n",BMI);
+        printf("You are underweight\n");
+    }
+    else if (BMI>18 && BMI<25)
+{
+printf("Your BMI is %f\n",BMI);
+        printf("You are having Ideal BMI.");    
+     }    
+     else if (BMI>=25)
+{
+printf("Your BMI is %f\n",BMI);
+        printf("You are Obese."); 
+        
+}
+printf("\n\nAny medicine you are crurently consuming?\n");
+scanf("%c" ,&medicine[0]);
+scanf("%c" ,&medicine[1]);
+scanf("%c" ,&medicine[2]);
+scanf("%c" ,&medicine[3]);
+scanf("%c" ,&medicine[4]);
+
+
+
+    return 0;
+}
