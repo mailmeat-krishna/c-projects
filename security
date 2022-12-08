@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int pass;
+    printf("Enter Password\n");
+    scanf("%d",&pass);
+    if(pass==1111)
+    {
+        printf("Welcome Mr.Stark");
+    
+    }
+    else
+    {
+        printf("Access Denied");
+    }
+    
+
+}
