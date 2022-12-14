@@ -3,7 +3,7 @@
 
 int main() {
    float age, height, weight, BMI;
-   char medicine[100];
+   char issue[5], doctor, appointmenttime;
   
     printf("Enter Your age\n");
     scanf("%f" ,& age);
@@ -28,14 +28,23 @@ printf("Your BMI is %f\n",BMI);
         printf("You are Obese."); 
         
 }
-printf("\n\nAny medicine you are crurently consuming?\n");
-scanf("%c" ,&medicine[0]);
-scanf("%c" ,&medicine[1]);
-scanf("%c" ,&medicine[2]);
-scanf("%c" ,&medicine[3]);
-scanf("%c" ,&medicine[4]);
+printf("\n\nAny problems you are currently facing\n");
+scanf("%c" ,&issue[0]);
+scanf("%c" ,&issue[1]);
+scanf("%c" ,&issue[2]);
+scanf("%c" ,&issue[3]);
+scanf("%c" ,&issue[4]);
 
-
-
-    return 0;
+printf("\nAny Doctor with which you want to have appointment?\n");
+scanf("%c" ,&doctor);
+if(doctor=="sanghvi" || doctor=="pramod")
+{
+    printf("When would you like to schedule apartment?\n");
+    printf("Choose the time of appointment\n");
+    printf("Appointment Slots:\n");
+    printf("11am\n12am\n1pm\n3pm\n4pmam\n6pm\n7pm\n8pm\n");
+    scanf("%c" ,&appointmenttime);
+    printf("Appointment with Dr.Pramaod Sanghvi is successful!\n");
+}
+return 0;
 }
